@@ -16,7 +16,7 @@ export interface FacetsProps
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [children](./search-ui-react.facetsprops.children.md) | React.ReactElement&lt;Facet.Standard \| Facet.Numerical&gt;\[\] |  |
+|  [children](./search-ui-react.facetsprops.children.md) | React.ReactElement&lt;[Standard](./search-ui-react.standard.md) \| [Numerical](./search-ui-react.numerical.md)<!-- -->&gt;\[\] |  |
 |  [customCssClasses?](./search-ui-react.facetsprops.customcssclasses.md) | [StandardFacetsCssClasses](./search-ui-react.standardfacetscssclasses.md) | <i>(Optional)</i> CSS classes for customizing the component styling. |
 |  [searchOnChange?](./search-ui-react.facetsprops.searchonchange.md) | boolean | <i>(Optional)</i> Whether or not a search is automatically run when a filter is selected. Defaults to true. |
 

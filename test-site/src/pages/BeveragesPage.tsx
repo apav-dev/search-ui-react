@@ -10,6 +10,7 @@ import {
   NumericalFacets,
   Pagination,
   StandardFacets,
+  Facets
 } from '@yext/search-ui-react';
 import { useLayoutEffect } from 'react';
 
@@ -25,8 +26,7 @@ export function BeveragesPage() {
       <SearchBar />
       <div className='flex'>
         <div className='mr-5 w-56 shrink-0'>
-          <StandardFacets />
-          <NumericalFacets />
+          <Facets />
         </div>
         <div className='flex-grow'>
           <div className='flex items-baseline'>

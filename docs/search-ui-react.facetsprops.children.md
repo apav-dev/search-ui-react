@@ -7,5 +7,5 @@
 <b>Signature:</b>
 
 ```typescript
-children: React.ReactElement<Facet.Standard | Facet.Numerical>[];
+children: React.ReactElement<Standard | Numerical>[];
 ```
