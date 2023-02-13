@@ -4,7 +4,7 @@ export {
   SearchBarProps,
   VisualAutocompleteConfig,
   RenderEntityPreviews,
-  onSearchFunc
+  onSearchFunc,
 } from './SearchBar';
 
 export { DropdownItem, DropdownItemProps } from './Dropdown/DropdownItem';
@@ -14,7 +14,7 @@ export { FocusedItemData } from './Dropdown/FocusContext';
 export {
   SpellCheck,
   SpellCheckCssClasses,
-  SpellCheckProps
+  SpellCheckProps,
 } from './SpellCheck';
 
 export {
@@ -22,33 +22,33 @@ export {
   DirectAnswerCssClasses,
   DirectAnswerProps,
   UnknownFieldTypeDisplayComponent,
-  UnknownFieldTypeDisplayProps
+  UnknownFieldTypeDisplayProps,
 } from './DirectAnswer';
 
 export {
   ThumbsFeedback,
   FeedbackType,
   ThumbsFeedbackCssClasses,
-  ThumbsFeedbackProps
+  ThumbsFeedbackProps,
 } from './ThumbsFeedback';
 
 export {
   FilterSearch,
   FilterSearchCssClasses,
   FilterSearchProps,
-  OnSelectParams
+  OnSelectParams,
 } from './FilterSearch';
 
 export {
   LocationBias,
   LocationBiasCssClasses,
-  LocationBiasProps
+  LocationBiasProps,
 } from './LocationBias';
 
 export {
   AppliedFilters,
   AppliedFiltersCssClasses,
-  AppliedFiltersProps
+  AppliedFiltersProps,
 } from './AppliedFilters';
 
 export {
@@ -60,78 +60,73 @@ export {
 export {
   VerticalResults,
   VerticalResultsCssClasses,
-  VerticalResultsProps
+  VerticalResultsProps,
 } from './VerticalResults';
 
 export {
   Pagination,
   PaginationCssClasses,
-  PaginationProps
+  PaginationProps,
 } from './Pagination';
 
 export {
   StandardCard,
   StandardCardCssClasses,
-  StandardCardProps
+  StandardCardProps,
 } from './cards/standard/StandardCard';
 
 export {
   AlternativeVerticals,
   AlternativeVerticalsCssClasses,
   AlternativeVerticalsProps,
-  VerticalLabelMap
+  VerticalLabelMap,
 } from './AlternativeVerticals';
 
 export {
   ResultsCount,
   ResultsCountCssClasses,
-  ResultsCountProps
+  ResultsCountProps,
 } from './ResultsCount';
 
 export {
   FilterOptionConfig,
   RangeInputCssClasses,
-  HierarchicalFacetDisplayCssClasses
+  HierarchicalFacetDisplayCssClasses,
 } from './Filters';
 
 export {
   StaticFilters,
   StaticFiltersCssClasses,
   StaticFiltersProps,
-  StaticFilterOptionConfig
+  StaticFilterOptionConfig,
 } from './StaticFilters';
 
 export {
   StandardFacets,
   StandardFacetsCssClasses,
-  StandardFacetsProps
+  StandardFacetsProps,
 } from './StandardFacets';
 
 export {
   HierarchicalFacets,
   HierarchicalFacetsCssClasses,
-  HierarchicalFacetsProps
+  HierarchicalFacetsProps,
 } from './HierarchicalFacets';
 
 export {
   NumericalFacets,
   NumericalFacetsCssClasses,
-  NumericalFacetsProps
+  NumericalFacetsProps,
 } from './NumericalFacets';
 
-export {
-  FilterGroupProps,
-  FilterGroupCssClasses
-} from './FilterGroup';
+export { FilterGroupProps, FilterGroupCssClasses } from './FilterGroup';
 
-export {
-  FilterDivider
-} from './FilterDivider';
+export { FilterDivider } from './FilterDivider';
 
 export {
   ApplyFiltersButton,
   ApplyFiltersButtonCssClasses,
-  ApplyFiltersButtonProps
+  ApplyFiltersButtonProps,
 } from './ApplyFiltersButton';
 
 export {
@@ -140,13 +135,15 @@ export {
   MapboxMapProps,
   OnDragHandler,
   CoordinateGetter,
-  Coordinate
+  Coordinate,
 } from './MapboxMap';
 
 export {
   renderHighlightedValue,
-  HighlightedValueCssClasses
+  HighlightedValueCssClasses,
 } from './utils/renderHighlightedValue';
 
 export * from './sections';
 export * from './AnalyticsProvider';
+
+export * from './Facets';

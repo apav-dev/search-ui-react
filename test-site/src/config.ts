@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/quotes */
 export const config = {
-  apiKey: '2d8c550071a64ea23e263118a2b0680b',
-  experienceKey: 'slanswers-hier-facets',
+  apiKey: '10a44dca245f5fd3faba055fd4d28e1d',
+  experienceKey: 'toast',
   locale: 'en',
-  experienceVersion: 'STAGING',
-  businessId: 123123
+  experienceVersion: 'PRODUCTION',
+  businessId: 3813373,
 };

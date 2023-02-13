@@ -10,6 +10,7 @@ import { AnalyticsConfig } from '@yext/analytics';
 import { AnalyticsService } from '@yext/analytics';
 import { AutocompleteResponse } from '@yext/search-headless-react';
 import { DirectAnswer as DirectAnswer_2 } from '@yext/search-headless-react';
+import { DisplayableFacet } from '@yext/search-headless-react';
 import { FieldValueStaticFilter } from '@yext/search-headless-react';
 import { FilterSearchResponse } from '@yext/search-headless-react';
 import { HighlightedValue } from '@yext/search-headless-react';
@@ -199,6 +200,57 @@ export function executeAutocomplete(searchActions: SearchActions): Promise<Autoc
 
 // @public
 export function executeSearch(searchActions: SearchActions): Promise<void>;
+
+// Warning: (ae-internal-missing-underscore) The name "Facet" should be prefixed with an underscore because the declaration is marked as @internal
+//
+// @internal
+export namespace Facet {
+    // (undocumented)
+    export interface Numerical extends Standard {
+        customCssClasses?: NumericalFacetsCssClasses;
+        getFilterDisplayName?: (value: NumberRangeValue) => string;
+        inputPrefix?: JSX.Element;
+    }
+    // @public
+    export interface Standard {
+        collapsible?: boolean;
+        customCssClasses?: StandardFacetsCssClasses;
+        defaultExpanded?: boolean;
+        // (undocumented)
+        facetId: string;
+        showMoreLimit?: number;
+        showOptionCounts?: boolean;
+    }
+    const // (undocumented)
+    StandardFacet: (props: Standard & {
+        facet: DisplayableFacet;
+    }) => JSX.Element;
+}
+
+// Warning: (ae-internal-missing-underscore) The name "Facets" should be prefixed with an underscore because the declaration is marked as @internal
+//
+// @internal
+export function Facets(props: FacetsProps): JSX.Element;
+
+// @public
+export interface FacetsCssClasses extends FilterGroupCssClasses {
+    // (undocumented)
+    children?: React.ReactNode;
+    // (undocumented)
+    divider?: string;
+    // (undocumented)
+    standardFacetsContainer?: string;
+}
+
+// @public
+export interface FacetsProps {
+    // Warning: (ae-incompatible-release-tags) The symbol "children" is marked as @public, but its signature references "Facet" which is marked as @internal
+    //
+    // (undocumented)
+    children: React.ReactElement<Facet.Standard | Facet.Numerical>[];
+    customCssClasses?: StandardFacetsCssClasses;
+    searchOnChange?: boolean;
+}
 
 // @public
 export type FeedbackType = 'THUMBS_UP' | 'THUMBS_DOWN';
