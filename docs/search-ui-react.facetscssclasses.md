@@ -4,7 +4,7 @@
 
 ## FacetsCssClasses interface
 
-The CSS class interface for [StandardFacets()](./search-ui-react.standardfacets.md)<!-- -->.
+Facets CSS Classes
 
 <b>Signature:</b>
 

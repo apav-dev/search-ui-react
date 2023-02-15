@@ -16,6 +16,7 @@
 |  [DropdownItem(\_props)](./search-ui-react.dropdownitem.md) | A wrapper component for specifying a DropdownItemWithIndex. The index will be automatically provided by the Dropdown component instance. |
 |  [executeAutocomplete(searchActions)](./search-ui-react.executeautocomplete.md) | Executes a universal/vertical autocomplete search and return the corresponding response. |
 |  [executeSearch(searchActions)](./search-ui-react.executesearch.md) | Executes a universal/vertical search. |
+|  [Facets(props)](./search-ui-react.facets.md) | Facets |
 |  [FilterDivider({ className })](./search-ui-react.filterdivider.md) | A divider component used to separate NumericalFacets, HierarchicalFacets, StandardFacets, and StaticFilters. |
 |  [FilterSearch({ searchFields, label, placeholder, searchOnSelect, onSelect, sectioned, customCssClasses })](./search-ui-react.filtersearch.md) | A component which allows a user to search for filters associated with specific entities and fields. |
 |  [getSearchIntents(searchActions)](./search-ui-react.getsearchintents.md) | Get search intents of the current query stored in headless using autocomplete request. |
@@ -59,8 +60,8 @@
 |  [CtaData](./search-ui-react.ctadata.md) | The shape of a StandardCard CTA field's data. |
 |  [DirectAnswerCssClasses](./search-ui-react.directanswercssclasses.md) | The CSS class interface for [DirectAnswer()](./search-ui-react.directanswer.md)<!-- -->. |
 |  [DirectAnswerProps](./search-ui-react.directanswerprops.md) | Props for [DirectAnswer()](./search-ui-react.directanswer.md)<!-- -->. |
-|  [FacetsCssClasses](./search-ui-react.facetscssclasses.md) | The CSS class interface for [StandardFacets()](./search-ui-react.standardfacets.md)<!-- -->. |
-|  [FacetsProps](./search-ui-react.facetsprops.md) | Props for the [StandardFacets()](./search-ui-react.standardfacets.md) component. |
+|  [FacetsCssClasses](./search-ui-react.facetscssclasses.md) | Facets CSS Classes |
+|  [FacetsProps](./search-ui-react.facetsprops.md) | Facets Props |
 |  [FilterGroupCssClasses](./search-ui-react.filtergroupcssclasses.md) | The CSS class interface for FilterGroup. |
 |  [FilterGroupProps](./search-ui-react.filtergroupprops.md) | Props for the FilterGroup component. |
 |  [FilterOptionConfig](./search-ui-react.filteroptionconfig.md) | The configuration data for a field value filter option. |
@@ -73,7 +74,7 @@
 |  [LocationBiasCssClasses](./search-ui-react.locationbiascssclasses.md) | The CSS class interface for the [LocationBias()](./search-ui-react.locationbias.md) component. |
 |  [LocationBiasProps](./search-ui-react.locationbiasprops.md) | The props for the [LocationBias()](./search-ui-react.locationbias.md) component. |
 |  [MapboxMapProps](./search-ui-react.mapboxmapprops.md) | Props for the [MapboxMap()](./search-ui-react.mapboxmap.md) component. The type param "T" represents the type of "rawData" field of the results use in the map. |
-|  [Numerical](./search-ui-react.numerical.md) | Numerical Facet. |
+|  [NumericalFacetProps](./search-ui-react.numericalfacetprops.md) | Props for the [NumericalFacets()](./search-ui-react.numericalfacets.md) component. |
 |  [NumericalFacetsCssClasses](./search-ui-react.numericalfacetscssclasses.md) | The CSS class interface for [NumericalFacets()](./search-ui-react.numericalfacets.md)<!-- -->. |
 |  [NumericalFacetsProps](./search-ui-react.numericalfacetsprops.md) | Props for the [NumericalFacets()](./search-ui-react.numericalfacets.md) component. |
 |  [OnSelectParams](./search-ui-react.onselectparams.md) | The parameters that are passed into [FilterSearchProps.onSelect](./search-ui-react.filtersearchprops.onselect.md)<!-- -->. |
@@ -88,10 +89,10 @@
 |  [SectionProps](./search-ui-react.sectionprops.md) | The configuration of a section template for a vertical's results on a universal page. |
 |  [SpellCheckCssClasses](./search-ui-react.spellcheckcssclasses.md) | The CSS Class interface for SpellCheck. |
 |  [SpellCheckProps](./search-ui-react.spellcheckprops.md) | The props for the [SpellCheck()](./search-ui-react.spellcheck.md) component. |
-|  [Standard](./search-ui-react.standard.md) | Standard Facet. |
 |  [StandardCardCssClasses](./search-ui-react.standardcardcssclasses.md) | The CSS class interface used for the StandardCardDisplay. |
 |  [StandardCardData](./search-ui-react.standardcarddata.md) | The data used by the [StandardCard()](./search-ui-react.standardcard.md) and taken from the original Result. |
 |  [StandardCardProps](./search-ui-react.standardcardprops.md) | Props for a StandardCard. |
+|  [StandardFacetProps](./search-ui-react.standardfacetprops.md) | Standard Facet Props |
 |  [StandardFacetsCssClasses](./search-ui-react.standardfacetscssclasses.md) | The CSS class interface for [StandardFacets()](./search-ui-react.standardfacets.md)<!-- -->. |
 |  [StandardFacetsProps](./search-ui-react.standardfacetsprops.md) | Props for the [StandardFacets()](./search-ui-react.standardfacets.md) component. |
 |  [StandardSectionCssClasses](./search-ui-react.standardsectioncssclasses.md) | The CSS class interface used for [StandardSection()](./search-ui-react.standardsection.md)<!-- -->. |
@@ -115,6 +116,8 @@
 |  Variable | Description |
 |  --- | --- |
 |  [ComponentsContentPath](./search-ui-react.componentscontentpath.md) | Content path to the source files in component library that utilizes Tailwind class names. This is intended to be used in user's custom tailwind config. |
+|  [NumericalFacet](./search-ui-react.numericalfacet.md) | Numerical Facet |
+|  [StandardFacet](./search-ui-react.standardfacet.md) | Standard Facet |
 
 ## Type Aliases
 

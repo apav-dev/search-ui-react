@@ -10,6 +10,7 @@ import { AnalyticsConfig } from '@yext/analytics';
 import { AnalyticsService } from '@yext/analytics';
 import { AutocompleteResponse } from '@yext/search-headless-react';
 import { DirectAnswer as DirectAnswer_2 } from '@yext/search-headless-react';
+import { DisplayableFacet } from '@yext/search-headless-react';
 import { FieldValueStaticFilter } from '@yext/search-headless-react';
 import { FilterSearchResponse } from '@yext/search-headless-react';
 import { HighlightedValue } from '@yext/search-headless-react';
@@ -201,6 +202,9 @@ export function executeAutocomplete(searchActions: SearchActions): Promise<Autoc
 export function executeSearch(searchActions: SearchActions): Promise<void>;
 
 // @public
+export function Facets(props: FacetsProps): JSX.Element;
+
+// @public
 export interface FacetsCssClasses extends FilterGroupCssClasses {
     // (undocumented)
     children?: React.ReactNode;
@@ -213,7 +217,7 @@ export interface FacetsCssClasses extends FilterGroupCssClasses {
 // @public
 export interface FacetsProps {
     // (undocumented)
-    children: React.ReactElement<Standard | Numerical>[];
+    children: React.ReactElement<StandardFacetProps | NumericalFacetProps> | React.ReactElement<StandardFacetProps | NumericalFacetProps>[];
     customCssClasses?: StandardFacetsCssClasses;
     searchOnChange?: boolean;
 }
@@ -389,7 +393,10 @@ export interface MapboxMapProps<T> {
 }
 
 // @public
-export interface Numerical extends Standard {
+export const NumericalFacet: (props: NumericalFacetProps) => JSX.Element;
+
+// @public
+export interface NumericalFacetProps extends Omit<StandardFacetProps, 'excludedFieldIds'> {
     customCssClasses?: NumericalFacetsCssClasses;
     getFilterDisplayName?: (value: NumberRangeValue) => string;
     inputPrefix?: JSX.Element;
@@ -636,17 +643,6 @@ export interface SpellCheckProps {
 }
 
 // @public
-export interface Standard {
-    collapsible?: boolean;
-    customCssClasses?: StandardFacetsCssClasses;
-    defaultExpanded?: boolean;
-    // (undocumented)
-    facetId: string;
-    showMoreLimit?: number;
-    showOptionCounts?: boolean;
-}
-
-// @public
 export function StandardCard(props: StandardCardProps<any>): JSX.Element;
 
 // @public
@@ -677,6 +673,24 @@ export interface StandardCardData {
 export interface StandardCardProps<T = DefaultRawDataType> extends CardProps<T> {
     customCssClasses?: StandardCardCssClasses;
     showFeedbackButtons?: boolean;
+}
+
+// @public
+export const StandardFacet: (props: StandardFacetProps) => JSX.Element;
+
+// @public
+export interface StandardFacetProps {
+    collapsible?: boolean;
+    customCssClasses?: StandardFacetsCssClasses;
+    defaultExpanded?: boolean;
+    // (undocumented)
+    _facet?: DisplayableFacet;
+    // (undocumented)
+    facetId: string;
+    showMoreLimit?: number;
+    showOptionCounts?: boolean;
+    // (undocumented)
+    transformOptions?: (options: DisplayableFacet['options']) => DisplayableFacet['options'];
 }
 
 // @public
